@@ -6,8 +6,13 @@ export const RegisBody = z.object({
   firstName: z.string().max(50),
   lastName: z.string().max(50),
   email: z.string().email(),
+  phoneNumber: z.string().max(20),
   password: z.string().min(6).max(100),
   confirmPassword: z.string().min(6).max(100),
+})
+.required({
+  email: true,
+  password:true
 })
 .strict()
 .superRefine(({ password, confirmPassword } , ctx) => {
@@ -21,8 +26,9 @@ export const RegisBody = z.object({
 })
 
 export const RegisterRes = z.object({
+  success: z.boolean(),
   data: z.object({
-    token: z.string(),
+    accessToken: z.string(),
     expiresAt: z.string(),
     account: z.object({
       id: z.number(),

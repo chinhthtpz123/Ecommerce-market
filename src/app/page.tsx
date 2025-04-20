@@ -1,4 +1,4 @@
-// import { redirect } from "next/navigation";
+import { redirect } from "next/navigation";
 // import type { AppProps } from "next/app";
 // import Link from "next/link";
 
@@ -14,6 +14,7 @@
 // }
 
 export default function App(): React.ReactElement {
+  redirect("/home");
   return (
     <div>
       <h1>Hello World</h1>

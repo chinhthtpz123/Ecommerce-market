@@ -54,7 +54,7 @@ export default function LandingPage() {
         </section> 
       </section>
 
-      <section id="about" className="flex flex-col mt-24 py-16 px-6 bg-sky-50 scroll-mt-28">
+      <section id="about" className="flex flex-col mt-24 py-16 px-6 bg-sky-50 scroll-mt-24">
         <h3 className="text-3xl italic font-bold text-center">About Us</h3>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
@@ -75,7 +75,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id='team' className='scroll-mt-28 mx-20 mt-20'>
+      <section id='team' className='scroll-mt-40 mx-20 mt-20'>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex flex-col gap-y-6 shadow-sm border-gray-200 rounded-md p-3">
             <div className="relative w-28 h-28 rounded-full bg-sky-100 flex items-center justify-center -top-16 left-1/2 transform-[translateX(-50%)]">

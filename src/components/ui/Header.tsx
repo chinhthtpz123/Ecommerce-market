@@ -17,12 +17,12 @@ export const HeaderLandingPage = (): React.ReactElement => {
   const router = useRouter();
   return (
     <div className="flex flex-row items-center justify-between h-24 lg:mx-20 sm:mx-10">
-      <div className="flex flex-row items-center space-x-2">
-        <Link href="/home">
-          <FaCartShopping className="lg:text-5xl text-custom sm:text-4xl" />
-        </Link>
-        <p className="text-custom lg:text-3xl italic sm:text-xl">E-Market</p>
-      </div>
+      <Link href='/home'>
+        <div className="flex flex-row items-center space-x-2">
+            <FaCartShopping className="lg:text-5xl text-custom sm:text-4xl" />
+          <p className="text-custom lg:text-3xl italic sm:text-xl">E-Market</p>
+        </div>
+      </Link>
 
       <div className="flex flex-row items-center lg:space-x-8 sm:space-x-3">
         <div className="lg:text-2xl text-custom header-link-landing sm:text-base">
