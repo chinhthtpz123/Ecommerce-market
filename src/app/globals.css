@@ -53,4 +53,8 @@ html {
     transform: translateY(-2px);
     opacity: .8;
   }
+
+  /* .notification-content:first-child {
+
+  } */
 }
