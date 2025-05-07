@@ -1,4 +1,4 @@
-import { HeaderAuth } from "@/components/ui/Header"
+import { HeaderAuth } from "@/_components/ui/Header"
 
 export default function LayoutAuth({
   children,

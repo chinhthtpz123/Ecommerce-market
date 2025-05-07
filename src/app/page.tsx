@@ -15,9 +15,4 @@ import { redirect } from "next/navigation";
 
 export default function App(): React.ReactElement {
   redirect("/home");
-  return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  );
 }
