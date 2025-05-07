@@ -1,4 +1,4 @@
-import { HeaderLandingPage } from "@/components/ui/Header";
+import { HeaderLandingPage } from "@/_components/ui/Header";
 
 export default function LayoutBuyer({
     children,

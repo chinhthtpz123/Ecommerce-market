@@ -37,7 +37,7 @@ const request = async<Response> (
   }
 
 
-  const baseURL = options?.baseURL === undefined ? envConfig.NEXT_PUBLIC_TEST_API_URL : options.baseURL;
+  const baseURL = options?.baseURL === undefined ? envConfig.API_URL : options.baseURL;
 
   const fullURL = url.startsWith('/') ? `${baseURL}${url}` : `${baseURL}/${url}`;
   const res = await fetch(fullURL, {
